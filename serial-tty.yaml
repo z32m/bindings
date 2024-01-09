@@ -1,0 +1,14 @@
+description: Serial TTY(UART spec)
+
+compatible: "serial-tty"
+
+properties:
+  device:
+    type: phandle
+    required: true
+    description: UART device
+
+  baud-rate:
+    type: int
+    required: true
+    description: UART speed

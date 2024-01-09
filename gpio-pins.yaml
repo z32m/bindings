@@ -1,0 +1,9 @@
+description: GPIO pins
+
+compatible: "gpio-pins"
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: The GPIOs.
