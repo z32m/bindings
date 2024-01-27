@@ -1,0 +1,9 @@
+description: ADCs spec
+
+compatible: "adc-io-channels"
+
+properties:
+  io-channels:
+    type: phandle-array
+    required: true
+    description: The ADCs.
