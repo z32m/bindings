@@ -1,0 +1,21 @@
+description: Serial TTY(UART spec)
+
+compatible: "uart-spec"
+
+properties:
+  uart:
+    type: phandle
+    required: true
+  baud-rate:
+    type: int
+    required: false
+    default: 115200
+  buffer-length:
+    type: int
+    required: false
+    default: 256
+  receive-timeout:
+    type: int
+    required: false
+    default: 500
+    description: Inactivity period after receiving at least a byte which triggers UART_RX_RDY event. Given in microseconds.
