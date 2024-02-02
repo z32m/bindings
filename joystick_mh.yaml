@@ -1,0 +1,14 @@
+description: JOYSTICK_MH specification
+
+compatible: "joystick-mh"
+
+properties:
+  io-channels:
+    type: phandle-array
+    required: true
+    description: ADC references
+  gpios:
+    type: phandle-array
+    required: true
+    description: GPIO reference
+
