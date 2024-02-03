@@ -1,0 +1,21 @@
+include: spi-device.yaml
+
+compatible: "sx127x"
+
+description: sx127x
+
+properties:
+  reset-gpios:
+    type: phandle-array
+    required: true
+    description: |
+      GPIO connected to the modem's RESET/NRESET signal.
+
+      This signal is open-drain, active-high (SX1272/3) or
+      active-low (SX1276/7/8/9) as interpreted by the modem.
+
+  dio-gpios:
+    type: phandle-array
+    required: true
+    description: |
+      DIO0 mapping
