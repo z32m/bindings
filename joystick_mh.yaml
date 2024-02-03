@@ -5,10 +5,9 @@ compatible: "joystick-mh"
 properties:
   io-channels:
     type: phandle-array
-    required: true
+    required: false
     description: ADC references
   gpios:
     type: phandle-array
     required: true
     description: GPIO reference
-
